@@ -1,6 +1,0 @@
-#!/bin/sh
-echo "**************************************************************************************"
-echo "* This is an example S2I builder image for running dummy Flask application *"
-echo "* It expects applications to be streamed into it via the S2I build process           *"
-echo "**************************************************************************************"
-

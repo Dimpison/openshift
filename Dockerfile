@@ -11,10 +11,10 @@ LABEL io.k8s.description="Dummy Platform for building and running Python Flask a
       io.openshift.s2i.scripts-url=image:///usr/local/s2i
 
 RUN adduser --system -u 10001 flask
-	  
-RUN mkdir -p /opt/app && chown -R flask: /opt/app && chown -R flask: /usr/local
 
 COPY ./S2iScripts/ /usr/local/s2i
+	  
+RUN mkdir -p /opt/app && chown -R flask: /opt/app && chown -R flask: /usr/local/s2i
 
 USER 10001
 

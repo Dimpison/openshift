@@ -14,7 +14,8 @@ RUN adduser --system -u 10001 flask
 
 COPY ./S2iScripts/ /usr/local/s2i
 	  
-RUN mkdir -p /opt/app && chown -R flask: /opt/app && chown -R flask: /usr/local/s2i
+RUN mkdir -p /opt/app && chown -R flask: /opt/app \
+    && chown -R flask: /usr/local/s2i && chmod +x /usr/local/s2i/*
 
 USER 10001
 

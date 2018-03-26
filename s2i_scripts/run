@@ -1,2 +1,2 @@
 #!/bin/bash -e
-/opt/dima/src/app.py
+python /opt/dima/src/app.py

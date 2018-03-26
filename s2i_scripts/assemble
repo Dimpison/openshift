@@ -1,0 +1,6 @@
+#!/bin/bash -e
+#
+# S2I assemble script
+# This script have nothing to do
+# Because my source code already ready to run and will exist into necessary
+# directory due to special label in Dockerfile
